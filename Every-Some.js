@@ -1,11 +1,10 @@
+
 function checkUsersValid(goodUsers) {
       return function allUsersValid(submittedUsers) {
-        const solution = submittedUsers.some(isValid)
-        function isValid(goodUsers) {
-          return submittedUsers.id === goodUsers.id
-        }
-        return submittedUsers.every(solution)
-        
+        const everyTest = (singleUser) => goodUsers.some((validUser) => validUser.id === singleUser.id);
+        const result = submittedUsers.every(everyTest)
+        return result
+      }
     }
 
     module.exports = checkUsersValid
