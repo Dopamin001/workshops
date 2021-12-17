@@ -12,3 +12,4 @@ module.exports = function* multiplier() {
 
 }
 
+//failed
