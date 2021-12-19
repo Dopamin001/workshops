@@ -1,5 +1,6 @@
-function duckCount() {
-    // SOLUTION GOES HERE
-  }
-  
+function duckCount(...obj) {
+  console.log("obj: ", obj)
+}
+
+duckCount()
   module.exports = duckCoun
