@@ -1,7 +1,13 @@
+    
 var promise = new Promise(function (fulfill, reject) {
-    fulfill('PROMISE VALUE')
+    fulfill('SECRET VALUE');
+  });
+promise.then((message) => {
+    console.log(message)
+}).catch((message) => {
+    console.log(message)
 })
-
-promise.then(console.log)
-
-console.log("MAIN PROGRAM")
+  
+var promise2 = Promise.resolve('SECRET VALUE');
+  
+var promise3 = Promise.reject(new Error('SECRET VALUE'));
