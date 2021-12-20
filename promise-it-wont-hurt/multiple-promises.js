@@ -1,3 +1,5 @@
+'use strict'
+
 function all(promiseA, promiseB) {
     const promise = new Promise((resolve, reject) => {
         let count = 0;
@@ -22,6 +24,5 @@ function all(promiseA, promiseB) {
     });
 }
 
-all(getPromise1(), getPromise2())
-    .then(console.log);
+all(getPromise1(), getPromise2()).then(console.log)
 
