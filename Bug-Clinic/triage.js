@@ -12,7 +12,6 @@ var browser = function(callback) {
 var koopa = function(error, file) {
     if(error) {
         console.error(error);
-        return;
     }
     peach(JSON.parse(file))
     
